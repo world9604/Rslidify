@@ -1,0 +1,58 @@
+---
+title: "title"
+author: "author"
+highlighter: highlight.js
+output: word_documentad
+job: job
+knit: slidify::knit2slides
+mode: selfcontained
+hitheme: tomorrow
+subtitle: subtitle
+framework: io2012
+widgets: []
+---
+
+## Read-And-Delete
+
+1. Edit YAML front matter
+2. Write using R Markdown
+3. Use an empty line followed by three dashes to separate slides!
+
+--- .class #id 
+
+## Slide 1
+
+Animated List
+
+> 1. data에 melt(사용할 데이터, id=c(기준이 되는 칼럼))
+> 기준이 되는 칼럼에 값으로 사용하는 데이터 칼럼명들을 로우로 나열한다.
+
+
+
+
+---
+
+## Motion Chart
+```{r}
+
+```
+
+```{r echo=F, results='asis', message=F}
+library(googleVis)
+M1 = gvisMotionChart(Fruits, idvar = 'Fruit', timevar = "Year")
+print(M1, tag='chart')
+```
+---
+
+## plot by taein
+
+1. practice plot base
+
+```{r echo=F, results='asis', message=F}
+var1<-c(1,2,3,4,5)
+plot(var1, main='main title', sub='sub title', xlab='xlab',   ylab='ylab', tmag=2, type='o')
+```
+
+
+
+
